@@ -25,8 +25,17 @@ Using an input file that contains the information about the position and connect
 
 1. Prepare input files from the same developmental stage in the same format as the attached sample folder (./Samples/*/, where * is the stage name).
 2. Change the variable "filename" in BayesParameterEstimation.py to the input file from ./Samples/*/ in step 1, or the variable stage in HBayesParameterEstimation.py to the stage name *.
-4. Run "BayesianParameterEstimation.py" or "HBayesianParameterEstimation.py" on IDE or IPython.
+3. Run "BayesianParameterEstimation.py" or "HBayesianParameterEstimation.py" on IDE or IPython.
+
+These Bayesian parameter inference coded were originally implemented for image datasets of in vivo epithelial tissues. For inference using synthetic data, please set the following flags accordingly:
+ - `AreaNormalization = False`  
+ - `Artificial = True`
+
+ instead of the default ones:
+ - `AreaNormalization = True`  
+ - `Artificial = False`
 
 ## Reference
 1. Xin Yan, Goshi Ogita#, Shuji Ishihara, and Kaoru Sugimura# (2024)<br>
 "Bayesian parameter inference for epithelial mechanics."<br> Journal of Theoretical Biology [[https://www.sciencedirect.com/science/article/pii/S0022519324002455](https://www.sciencedirect.com/science/article/pii/S0022519324002455)]
+
